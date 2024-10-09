@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #1e152a;
+    --secondary-color: #f0b32d;
+    --accent-color: #931f1d;
+    --background-color: #f9a03f; 
+}
+header img{
+    width: 15%;
+}
+nav a{
+    margin-top: 20px;
+    color: #1e152a;
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Bebas Neue';
+    color: var(--secondary-color);
+    text-align: left;
+    margin-bottom: 0px;
+}
+h2{
+    font-family: 'Open sans';
+    font-size: 50px;
+    color: var(--secondary-color);
+    text-align: left;
+    margin-bottom: 15px;
+}
+p{
+    font-family: 'Open sans';
+    font-size: 25px;
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--primary-color);
+}
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+}
+.hero article {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    padding: 80px;
+    max-width: 60px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+.hero article img{
+    float: right;
+    margin-left: 10px;
+    width: 150px;
+    height: auto;
+}
+.hero img {
+    display: block;
+    width: 43%;
+    height: auto;
+}
+section{
+    display: grid;
+    gap: 30px;
+}
+.sociallinks a{
+    text-decoration: none;
+}
+.sociallinks img{
+    width: 100px;
+    height: auto;
+    margin-left: 0px;
+    left: 30px;
+}
