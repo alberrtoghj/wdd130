@@ -4,20 +4,39 @@
     --accent-color: #931f1d;
     --background-color: #f9a03f; 
 }
+
+.logo img {
+	width: 100px;
+	height: auto;
+}
+header{
+    background-color: #f9a03f;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    padding: 1rem;
+}
+
+.logo{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    
+}
 header img{
     width: 15%;
 }
 nav a{
-    margin-top: 20px;
+    font-size: 20px;
     color: #1e152a;
     text-decoration: none;
 }
-h1 {
-    font-family: 'Bebas Neue';
-    color: var(--secondary-color);
-    text-align: left;
-    margin-bottom: 0px;
-}
+
 h2{
     font-family: 'Open sans';
     font-size: 50px;
@@ -38,20 +57,35 @@ body{
     padding: 20px;
     color: var(--primary-color);
 }
+
 .hero {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 60px;
+    grid-template-rows: 100px 1fr 100px;
     position: relative;
     text-align: center;
     padding: 40px 0;
 }
-.hero article {
-    position: absolute;
-    top: 6%;
-    left: 10%;
-    padding: 80px;
-    max-width: 60px;
-    padding: 20px;
-    max-width: 400px;
+
+.hero h1 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-family: 'Bebas Neue';
+    color: white;
+    width: 100%;
     text-align: center;
+    z-index: 1;
+}
+
+.hero article {
+    background-color: rgb(0, 0, 0, .9);
+    /* position: absolute; */
+    padding: 80px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding-bottom: 45px;  
+
 }
 .hero article img{
     float: right;
@@ -59,10 +93,17 @@ body{
     width: 150px;
     height: auto;
 }
+
+.hero article p{
+    color: white;
+    font-size: 30px;
+}
 .hero img {
-    display: block;
-    width: 43%;
-    height: auto;
+    grid-column: 1/5;
+    grid-row: 1/4;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 section{
     display: grid;
