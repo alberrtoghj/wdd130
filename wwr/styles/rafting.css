@@ -146,7 +146,7 @@ figure {
 figure img {
     height: 100px;
     display: block;
-    border-radius: 10x;
+    border-radius: 10px;
 }
 figcaption {
     margin-top: 10px;
