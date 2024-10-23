@@ -96,6 +96,11 @@ textarea {
     height: 450px;
     object-fit: contain;
 }
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none; 
+}
 input[type="radio"]
 {
     background-color: initial;
